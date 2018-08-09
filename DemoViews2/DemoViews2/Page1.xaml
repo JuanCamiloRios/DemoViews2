@@ -5,22 +5,46 @@
     <ContentPage.Content>
         <StackLayout>
             <TableView Intent="Form">
-                    <TableSection Title="Datos Generales">
-                        <TextCell Text="Nombre"
+                <TableSection Title="Datos Generales">
+                    <TextCell Text="Nombre"
                                  Detail="solo mayores de 18"/>
-                        <EntryCell Placeholder="Ingresar su nombre"
+                    <EntryCell Placeholder="Ingresar su nombre"
                                    />
-                    </TableSection>
-                
+                </TableSection>
+
                 <TableSection Title="Datos Particulares">
                     <EntryCell Placeholder="(57)-777-11" 
                                Label="Telefono"/>
                     <SwitchCell Text="Suscribirce"
                                 />
                 </TableSection>
-                
+               
+                <TableSection>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout>
+                                <BoxView Color="Fuchsia"
+                                     />
+                                <Label Text="New Letter"
+                                     />
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Semanal"/>
+                                    <Label Text="Mensual"/>
+                                    <Label Text="Anual"/>
+                                </StackLayout>
+                                <Label Text="Elegir Color"/>
+                                <StackLayout>
+                                    <BoxView Color="Lime"/>
+                                    <BoxView Color="Maroon"/>
+                                    <BoxView Color="Teal"/>
+                                    <BoxView Color="Purple"/>
+                                </StackLayout>
+                                <BoxView Color="Fuchsia"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </TableSection>
             </TableView>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
