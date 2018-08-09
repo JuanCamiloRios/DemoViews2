@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoViews2.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                    <TableSection Title="Datos Generales">
+                        <TextCell Text="Nombre"
+                                 Detail="solo mayores de 18"/>
+                        <EntryCell Placeholder="Ingresar su nombre"
+                                   />
+                    </TableSection>
+                
+                <TableSection Title="Datos Particulares">
+                    <EntryCell Placeholder="(57)-777-11" 
+                               Label="Telefono"/>
+                    <SwitchCell Text="Suscribirce"
+                                />
+                </TableSection>
+                
+            </TableView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
