@@ -16,6 +16,7 @@
                      WidthRequest="1000"
                      HeightRequest="1000"
                      Navigated="Browser_Navigated"/>
+
         </StackLayout>
     </StackLayout>
 

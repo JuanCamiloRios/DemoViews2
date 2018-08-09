@@ -14,9 +14,9 @@ namespace DemoViews2
 			InitializeComponent();
 		}
 
-        private void Browser_Navigated(object sender, WebNavigatedEventArgs e)
+        async void Browser_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
         {
-
+            await DisplayAlert("Completado","Se ha completado la carga de la pagina","Ok");
         }
     }
 }
